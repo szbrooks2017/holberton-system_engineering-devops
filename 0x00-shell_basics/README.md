@@ -1,0 +1,1 @@
+pwd is showing what is on the line.
