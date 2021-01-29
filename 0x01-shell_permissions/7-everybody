@@ -1,2 +1,2 @@
 #!/bin/bash
-chmodd 111 hello
+chmodd +111 hello
