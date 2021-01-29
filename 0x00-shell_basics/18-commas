@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -(a p m X)
+ls -(a p m x)
