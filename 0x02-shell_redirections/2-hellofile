@@ -1,2 +1,2 @@
 #!/bin/bash
-ls | opendir /etc/passwd
+ls -l | opendir /etc/passwd
