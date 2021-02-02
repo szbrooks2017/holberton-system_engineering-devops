@@ -1,2 +1,2 @@
 #!/bin/bash
-grep -i /etc/sh/sshd_config
+grep "^abc"  /etc/sh/sshd_config
