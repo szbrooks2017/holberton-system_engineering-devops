@@ -1,0 +1,6 @@
+host strat
+	HostName 34.73.206.41
+	User ubuntu
+	PasswordAuthentication No
+	StrictHostKeyChecking No
+	IdentityFile ~/.ssh/holberton
