@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# pipe with a for loops
+for i in *
+do
+    echo "$i" | cut -d "-" -f2
+done
+
