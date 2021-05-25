@@ -5,12 +5,15 @@
 # else holbertonschool file does not exist
 # if file exists print (check empty/not empty)
 # regular file or nothing
+file="./holbertonschool"
 
 if [ -e "$FILE" ]; then
     echo "$FILE file exists"
+
     if [ -f "$FILE" ]; then
         echo "$FILE file is a regular file"
     fi
+
     if [ -s "$FILE" ]; then
         echo "$FILE file is not empty"
     else
