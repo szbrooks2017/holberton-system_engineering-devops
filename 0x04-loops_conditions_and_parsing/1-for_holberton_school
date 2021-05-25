@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# using a for loop to print 10 times
+
+for _ in {1..10}; do printf "Holberton school\n"; done
