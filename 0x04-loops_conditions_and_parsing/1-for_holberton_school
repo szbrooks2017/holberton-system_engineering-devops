@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # using a for loop to print 10 times
 
-for _ in {1..9}; do echo "Holberton school"; done
+for _ in {1..9}; do echo "Holberton School"; done
