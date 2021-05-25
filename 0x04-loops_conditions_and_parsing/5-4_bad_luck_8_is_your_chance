@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+#loop 10 times and display at certain intervals
+END=0
+x=$END
+while [ $x -lt 10 ]
+do
+    if [ $x -eq 8 ]
+    then
+        echo good luck
+    elif [ $x -eq 4 ]
+    then
+        echo bad luck
+    else
+        echo Holberton School
+    fi
+        x=$((x+1))
+done
