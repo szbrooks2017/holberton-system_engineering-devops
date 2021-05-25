@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# print 0-12 and 1-59
+hour=0
+minute=1
+while [ $hour -lt 12 ]
+do
+    echo "Hour: $hour"
+    (("minute=1"))
+
+    while [ $minute -le "59" ]
+        do
+            echo $minute
+            (("minute += 1"))
+        done
+    (("hour += 1"))
+done
