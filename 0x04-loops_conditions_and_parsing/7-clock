@@ -2,7 +2,7 @@
 # print 0-12 and 1-59
 hour=0
 minute=1
-while [ $hour -lt 12 ]
+while [ $hour -lt 13 ]
 do
     echo "Hour: $hour"
     (("minute=1"))
