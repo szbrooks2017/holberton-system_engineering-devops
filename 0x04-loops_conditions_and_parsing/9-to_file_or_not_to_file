@@ -9,15 +9,13 @@ FILE="holbertonschool"
 
 if [ -e "$FILE" ]; then
     echo "$FILE file exists"
-
-    if [ -f "$FILE" ]; then
-        echo "$FILE file is a regular file"
-    fi
-
     if [ -s "$FILE" ]; then
         echo "$FILE file is not empty"
-    else
+    elif [ ! -s "$FILE" ]; then
         echo "$FILE file is empty"
+    fi
+    if [ -f "$FILE" ]; then
+        echo "$FILE file is a regular file"
     fi
 else
     echo "holbertonschool file does not exist"
