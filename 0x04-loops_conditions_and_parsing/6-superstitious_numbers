@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # loop 20 times and print with a case statement
-END=0
+END=1
 counter=$END
 while [ $counter -lt 21 ]
 do
