@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# Looking up infor from sites
+
+printInfo() {
+	recordAndIp=$(dig $2.$1 | grep -A1 'ANSWER SECTION:' | awk '{print $4,$5}')
+	record=$(echo $recordAndIp | awk '{print $1}')
+        ip=$(echo $recordAndIp | awk '{print $2}')
+	echo "The subdomain $2 is a $record record and points to $ip"
+}
+
+if [ $# -eq 1 ]
+then
+	printInfo $1 www
+	printInfo $1 lb-01
+	printInfo $1 web-01
+	printInfo $1 web-02
+elif [ $# -eq 2 ]
+then
+	printInfo $1 $2
+fi
+
