@@ -1,17 +1,22 @@
 #!/usr/bin/python3
+"""for api"""
 import requests
 import sys
 
-def get_employee_tasks(employeeId):
 
+def get_employee_tasks(employeeId):
+    """for api"""
     # variables
     name = ''
     task_list = []
     completed_counter = 0
 
     # do the get requests
-    usersRes = requests.get("https://jsonplaceholder.typicode.com/users/{}".format(employeeId))
-    todosRes = requests.get("https://jsonplaceholder.typicode.com/users/{}/todos".format(employeeId))
+    usersRes = requests.get(
+        "https://jsonplaceholder.typicode.com/users/{}".format(employeeId))
+    todosRes = requests.get(
+        "https://jsonplaceholder.typicode.com/users/{}/todos".
+        format(employeeId))
 #    print("userRes: {}\n".format(userRes))
 #    print("todoRes: {}\n".format(todoRes))
 
@@ -31,13 +36,14 @@ def get_employee_tasks(employeeId):
     # print('task: {}'.format(task_list)
 
     # print first line
-    print('Employee {} is done with task({}/{}):'.format(name, completed_counter, len(todosJson)))
+    print('Employee {} is done with task({}/{}):'.format(
+        name, completed_counter, len(todosJson)))
     # loop the task_list and print tasks
     for title in task_list:
         print('\t {}'.format(title))
     return 0
 
-if __name__== '__main__':
+if __name__ == '__main__':
     get_employee_tasks(sys.argv[1])
 
 # NOTES
