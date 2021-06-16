@@ -39,6 +39,6 @@ if __name__ == '__main__':
 # get all todos
 # loop the todos
 # if the userID in task is not in the dict -> add with []
-## create new task dictionary
-## append task dict
-## put it in the file
+# create new task dictionary
+# append task dict
+# put it in the file
