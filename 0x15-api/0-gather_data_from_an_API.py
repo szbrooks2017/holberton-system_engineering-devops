@@ -32,11 +32,12 @@ def get_employee_tasks(employeeId):
             task_list.append(task.get('title'))
 
     # print first line
-    print('Employee {} is done with task({}/{}):'.format(
+    print('Employee {} is done with tasks({}/{}):'.format(
         name, completed_counter, len(todosJson)))
     # loop the task_list and print tasks
     for title in task_list:
         print('\t {}'.format(title))
+    return 0
 
 if __name__ == '__main__':
     get_employee_tasks(sys.argv[1])
