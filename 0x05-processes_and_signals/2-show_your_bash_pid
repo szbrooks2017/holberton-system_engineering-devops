@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# dispay process that contain a word
+ps auxf | grep bash
